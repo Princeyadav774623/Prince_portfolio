@@ -413,8 +413,9 @@ body.theme-dark .edu-card { background:rgba(255,255,255,0.02); border-color:var(
     .massive-text { font-size:18vw; }
     .massive-text-small { font-size:8vw; }
     .hero-sub { flex-direction:column; align-items:center; text-align:center; gap:0.5rem; }
-    .footer-bottom { grid-template-columns:1fr; text-align:center; gap:3rem; }
-    .footer-col { display: flex; flex-direction: column; align-items: center; }
+    .footer-bottom { grid-template-columns:1fr; text-align:center; gap:3rem; justify-items:center; }
+    .footer-col { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+    .footer-col p, .footer-col a { text-align: center; }
     .form-row { grid-template-columns:1fr; }
     .hero-image-wrapper { right:-5%; height:55%; opacity:0.4; }
 }
