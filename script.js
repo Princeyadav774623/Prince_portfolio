@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Escape") contactModal.classList.remove("active");
     });
 
-    // ── ARCHITECTURE MODAL ──
+    // ── ARCHITECTURE MODALS ──
     const openArchBtn = document.getElementById("open-arch-modal-btn");
     const archModal = document.getElementById("arch-modal");
     const archCloseBtn = document.getElementById("arch-close-btn");
@@ -113,6 +113,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") archModal.classList.remove("active");
+        });
+    }
+
+    // ── RAG ARCHITECTURE MODAL ──
+    const openRagArchBtn = document.getElementById("open-rag-arch-modal-btn");
+    const ragArchModal = document.getElementById("rag-arch-modal");
+    const ragArchCloseBtn = document.getElementById("rag-arch-close-btn");
+
+    if (openRagArchBtn && ragArchModal && ragArchCloseBtn) {
+        openRagArchBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            ragArchModal.classList.add("active");
+        });
+
+        ragArchCloseBtn.addEventListener("click", () => ragArchModal.classList.remove("active"));
+
+        ragArchModal.addEventListener("click", (e) => {
+            if (e.target === ragArchModal) ragArchModal.classList.remove("active");
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") ragArchModal.classList.remove("active");
         });
     }
 

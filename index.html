@@ -34,7 +34,7 @@
             <a href="#education">Education</a>
         </div>
         <div class="nav-actions">
-            <a href="Resume.pdf" download="Prince_Yadav_Resume.pdf" class="nav-resume" id="resume-btn">↓ RESUME</a>
+            <a href="Prince_Yadav_AI_Engineer_resume.pdf" download="Prince_Yadav_AI_Engineer_resume.pdf" class="nav-resume" id="resume-btn">↓ RESUME</a>
             <a href="#" class="nav-contact" id="init-contact-btn">INIT_CONTACT</a>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <div class="hero-resume-cta">
-                <a href="Resume.pdf" download="Prince_Yadav_Resume.pdf" class="btn-primary" id="hero-download-btn">↓ Download Resume</a>
-                <a href="Resume.pdf" target="_blank" class="btn-secondary" id="hero-view-btn">⎋ View Resume</a>
+                <a href="Prince_Yadav_AI_Engineer_resume.pdf" download="Prince_Yadav_AI_Engineer_resume.pdf" class="btn-primary" id="hero-download-btn">↓ Download Resume</a>
+                <a href="Prince_Yadav_AI_Engineer_resume.pdf" target="_blank" class="btn-secondary" id="hero-view-btn">⎋ View Resume</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -99,7 +99,7 @@
                 <p class="inter-text">As the founder of <span class="highlight-orange">NextAIQLabs</span>, I've designed industrial automation systems and built AI education programs that have shaped the next generation of tech professionals. My internship at <span class="highlight-orange">IBM</span> gave me enterprise-grade exposure to time-series forecasting, hyperparameter optimization, and deploying models at scale.</p>
                 <p class="inter-text">I believe in <strong>explainable, ethical AI</strong> — building systems that humans can understand and trust.</p>
                 <div class="about-cta">
-                    <a href="Resume.pdf" download="Prince_Yadav_Resume.pdf" class="btn-primary">Download Resume ↓</a>
+                    <a href="Prince_Yadav_AI_Engineer_resume.pdf" download="Prince_Yadav_AI_Engineer_resume.pdf" class="btn-primary">Download Resume ↓</a>
                     <a href="https://linkedin.com/in/prince-yadav-6b37471b0" target="_blank" class="btn-secondary">LinkedIn →</a>
                 </div>
             </div>
@@ -182,7 +182,45 @@
             <div class="header-line"></div>
         </div>
 
-        <div class="yc-grid" style="grid-template-columns: 1fr; margin-bottom: 5rem;">
+        <div class="yc-grid" style="grid-template-columns: 1fr; margin-bottom: 5rem; gap: 2rem;">
+            <!-- RAG Based System (Highlighted) -->
+            <div class="yc-card reveal-item" style="position: relative; overflow: hidden;">
+
+                <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 class="yc-title" style="font-size: 2rem; color: var(--papaya-orange);">Enterprise RAG Document System</h3>
+                    <div class="status-indicator" style="display: flex; align-items: center; gap: 8px;">
+                        <span class="pulse-dot" style="width: 10px; height: 10px; background-color: var(--papaya-orange); border-radius: 50%; box-shadow: 0 0 10px var(--papaya-orange); animation: pulse 1.5s infinite;"></span>
+                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE / CORE</span>
+                    </div>
+                </div>
+                <div class="yc-body" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">A production-grade Retrieval-Augmented Generation (RAG) system engineered to ingest, index, and query any type of document with extremely high precision and zero hallucinations.</p>
+                        <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                                <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Hybrid Database Indexing:</strong> Leverages Pinecone for vector similarity search and Supabase for structured metadata storage.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Advanced Retrieval Pipeline:</strong> Implements Reciprocal Rank Fusion (RRF) and Neural Re-ranking via sentence_transformers CrossEncoder for optimal context extraction.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Continuous Evaluation:</strong> Automated Triad Evaluation utilizing an LLM-as-a-judge architecture for testing Faithfulness and Relevance of generated answers.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Deterministic Synthesis Control:</strong> System prompts enforce strict formatting and citation rules (with temperature=0.0) to eliminate hallucinations.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">High-Performance Ingestion:</strong> FastAPI background tasks handle asynchronous batch processing with real-time index upserting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="flex: 0 0 350px; display: flex; justify-content: center; align-items: center; padding: 1rem;">
+                        <img src="ChatGPT Image May 29, 2026, 10_36_18 AM.png" alt="RAG System Visualization" style="max-width: 100%; height: auto; border-radius: 12px; filter: drop-shadow(0 0 15px rgba(255,135,0,0.3)); border: 1px solid rgba(255,255,255,0.05);">
+                    </div>
+                </div>
+                <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="https://rag-document-api.onrender.com/" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App ↗</a>
+                    <button id="open-rag-arch-modal-btn" class="yc-link" onclick="document.getElementById('rag-arch-modal').classList.add('active'); return false;" style="background: none; border: none; cursor: pointer; font-size: 0.9rem; padding: 0; outline: none;">Architecture ⚡</button>
+                    <a href="https://github.com/Princeyadav774623/RAG-LAB" target="_blank" class="yc-link" style="font-size: 0.9rem;">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Fine Divider Line -->
+            <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+
             <!-- Team Flow AI -->
             <div class="yc-card reveal-item">
                 <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
@@ -410,9 +448,73 @@
                 <a href="https://linkedin.com/in/prince-yadav-6b37471b0" target="_blank" class="mono-text modal-link-item">💼 LinkedIn Profile</a>
                 <a href="https://github.com/Princeyadav774623" target="_blank" class="mono-text modal-link-item">🐙 GitHub Profile</a>
             </div>
-            <a href="Resume.pdf" download="Prince_Yadav_Resume.pdf" class="btn-primary" style="margin-top:2rem;display:inline-block;">↓ Download Resume</a>
+            <a href="Prince_Yadav_AI_Engineer_resume.pdf" download="Prince_Yadav_AI_Engineer_resume.pdf" class="btn-primary" style="margin-top:2rem;display:inline-block;">↓ Download Resume</a>
         </div>
     </div>
+    <!-- RAG Architecture Modal -->
+    <div class="modal-overlay" id="rag-arch-modal">
+        <div class="modal-content" style="max-width: 900px; text-align: left; max-height: 90vh; overflow-y: auto;">
+            <button class="modal-close" id="rag-arch-close-btn" onclick="document.getElementById('rag-arch-modal').classList.remove('active');">&times;</button>
+            <h2 class="massive-text-small" style="margin-bottom:0.5rem;">RAG LAB</h2>
+            <p class="mono-text highlight-orange" style="margin-bottom:1.5rem;">SYSTEM ARCHITECTURE</p>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="ChatGPT Image May 29, 2026, 10_09_29 AM.png" alt="RAG System Architecture" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border-dark); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <p class="inter-text" style="font-weight: bold; color: var(--papaya-orange); margin-bottom: 0.5rem;">1. High-Level Architecture</p>
+                <p class="inter-text" style="opacity: 0.8; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                    The system follows a decoupled, two-tier architecture deployed on Render:<br>
+                    &bull; <strong>Frontend Tier:</strong> A modern, highly responsive Single Page Application (SPA) built with Next.js and React. It features a custom design system with Apple-inspired UI elements.<br>
+                    &bull; <strong>Backend Tier:</strong> A high-performance Python REST API built with FastAPI. It handles complex machine learning pipelines, vector database operations, and LLM communication.
+                </p>
+
+                <p class="inter-text" style="font-weight: bold; color: var(--papaya-orange); margin-bottom: 0.5rem;">2. The RAG Pipeline (Algorithms & Flow)</p>
+                <p class="inter-text" style="opacity: 0.8; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                    The backend executes a sophisticated multi-stage RAG pipeline designed to minimize hallucinations and maximize accuracy.<br><br>
+                    <strong>A. Document Ingestion Pipeline</strong><br>
+                    &bull; <em>Parsing:</em> Extracts text from uploaded .txt and .pdf files.<br>
+                    &bull; <em>Chunking:</em> Splits documents into semantically meaningful chunks using a sliding window algorithm (e.g., 500 tokens with a 50-token overlap) to preserve context boundaries.<br>
+                    &bull; <em>Embedding Generation:</em> Converts text chunks into dense mathematical vectors using local Transformer models.<br>
+                    &bull; <em>Vector Storage:</em> Pushes the raw text and dense vectors into the vector database.<br><br>
+                    <strong>B. Retrieval Pipeline (Hybrid Search)</strong><br>
+                    &bull; <em>Dense Retrieval:</em> Approximate Nearest Neighbor (ANN) search using Cosine Similarity.<br>
+                    &bull; <em>Sparse Retrieval:</em> Standard keyword matching.<br>
+                    &bull; <em>Reciprocal Rank Fusion (RRF):</em> Mathematically combines scores from dense and sparse retrievers.<br>
+                    &bull; <em>Cross-Encoder Reranking:</em> Evaluates query and document chunk simultaneously, outputting highly accurate relevance scores.<br><br>
+                    <strong>C. Generation Pipeline</strong><br>
+                    &bull; <em>Context Construction:</em> Top reranked chunks are formatted into a rigid prompt template.<br>
+                    &bull; <em>LLM Inference:</em> Sent to a frontier LLM (OpenAI or Gemini) to generate answers.<br>
+                    &bull; <em>Citation Mapping:</em> The LLM cites exact source chunks used.<br><br>
+                    <strong>D. Automated Evaluation (LLM-as-a-Judge)</strong><br>
+                    &bull; <em>Faithfulness:</em> Checks if answer is strictly derived from retrieved context.<br>
+                    &bull; <em>Context Relevance:</em> Checks if retrieved chunks were useful.<br>
+                    &bull; <em>Answer Relevance:</em> Checks if answer directly addresses the question.
+                </p>
+
+                <p class="inter-text" style="font-weight: bold; color: var(--papaya-orange); margin-bottom: 0.5rem;">3. Technology & Model Stack</p>
+                <p class="inter-text" style="opacity: 0.8; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                    <strong>Databases & Infrastructure</strong><br>
+                    &bull; <em>Vector Database:</em> Supabase running PostgreSQL with pgvector.<br>
+                    &bull; <em>Hosting:</em> Render (Docker containerized environment).<br><br>
+                    <strong>Machine Learning Models</strong><br>
+                    &bull; <em>Embedding Model:</em> BAAI/bge-base-en-v1.5 or sentence-transformers/all-MiniLM-L6-v2.<br>
+                    &bull; <em>Reranking Model:</em> cross-encoder/ms-marco-MiniLM-L-6-v2.<br>
+                    &bull; <em>Generative LLMs:</em> Google Gemini / OpenAI.<br><br>
+                    <strong>Backend Frameworks</strong><br>
+                    &bull; FastAPI &bull; Pydantic &bull; PyTorch<br><br>
+                    <strong>Frontend Frameworks</strong><br>
+                    &bull; Next.js 14+ &bull; Vanilla CSS Modules
+                </p>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="https://github.com/Princeyadav774623/RAG-LAB" target="_blank" class="btn-secondary" style="border-color: var(--papaya-orange); color: var(--papaya-orange);">View Full Codebase on GitHub</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Architecture Modal -->
     <div class="modal-overlay" id="arch-modal">
         <div class="modal-content" style="max-width: 800px; text-align: left;">
