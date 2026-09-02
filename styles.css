@@ -140,12 +140,21 @@ body.theme-light .stat-number { color: var(--neon-lime-dark); }
     background-size: 60px 60px;
     pointer-events:none;
 }
-.hero-image-wrapper { position:absolute; right:5%; bottom:0; height:70%; z-index:5; pointer-events:none; }
+.hero-image-wrapper { 
+    position: absolute; 
+    right: 5%; 
+    bottom: 0; 
+    height: 72%; 
+    z-index: 5; 
+    pointer-events: none; 
+}
 .hero-image {
-    height:100%; object-fit:contain;
-    filter: grayscale(20%) contrast(1.05);
-    mask-image:linear-gradient(to top, transparent 2%, black 25%);
-    -webkit-mask-image:linear-gradient(to top, transparent 2%, black 25%);
+    height: 100%; 
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(10%) contrast(1.05);
+    mask-image: linear-gradient(to top, transparent 2%, black 25%);
+    -webkit-mask-image: linear-gradient(to top, transparent 2%, black 25%);
 }
 .hero-content { position:relative; z-index:10; }
 
@@ -230,22 +239,40 @@ body.theme-light .info-card { border-color:var(--border-light); background:rgba(
 .inline-link:hover { text-decoration:underline; }
 
 /* ── EXPERIENCE ── */
-.editorial-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
+.editorial-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:3rem; }
 .role-card { border-left:2px solid var(--border-light); padding-left:2rem; transition:transform 0.3s; }
 .role-card:hover { transform:translateX(8px); }
-.role-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; }
+.role-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; flex-wrap:wrap; gap:0.5rem; }
 .company-badge {
     background:rgba(255,135,0,0.1); border:1px solid rgba(255,135,0,0.3);
     padding:0.2rem 0.8rem; border-radius:4px; font-size:0.75rem;
+}
+.status-pill-active {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(204,255,0,0.1); border: 1px solid rgba(204,255,0,0.3);
+    padding: 0.2rem 0.75rem; border-radius: 50px;
+    font-size: 0.72rem; font-family: var(--font-mono); color: var(--neon-lime);
+    font-weight: bold;
+}
+body.theme-light .status-pill-active {
+    background: rgba(122,184,0,0.1); border-color: rgba(122,184,0,0.4); color: var(--neon-lime-dark);
 }
 .date { color:rgba(0,0,0,0.45); margin-bottom:1.5rem; font-size:0.75rem; }
 body.theme-dark .date { color:rgba(255,255,255,0.4); }
 .role-body p { margin-bottom:0.8rem; font-weight:600; }
 .role-body ul { list-style:none; }
-.role-body li { margin-bottom:0.5rem; padding-left:1.5rem; position:relative; font-size:0.95rem; line-height:1.6; opacity:0.85; }
+.role-body li { margin-bottom:0.6rem; padding-left:1.5rem; position:relative; font-size:0.95rem; line-height:1.6; opacity:0.85; }
 .role-body li::before { content:''; position:absolute; left:0; top:9px; width:5px; height:5px; background:var(--papaya-orange); border-radius:50%; }
-.metrics { display:flex; gap:0.8rem; margin-top:1.5rem; flex-wrap:wrap; }
+.metrics { display:flex; gap:0.8rem; margin-top:1.5rem; flex-wrap:wrap; align-items:center; }
 .metric-pill { font-family:var(--font-mono); font-size:0.7rem; padding:0.35rem 0.9rem; border:1px solid var(--border-light); border-radius:50px; }
+.role-action-btn {
+    background: none; border: 1px solid var(--papaya-orange); color: var(--papaya-orange);
+    padding: 0.35rem 0.9rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem;
+    cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+}
+.role-action-btn:hover {
+    background: var(--papaya-orange); color: #000;
+}
 
 /* ── PROJECTS ── */
 .yc-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
@@ -417,7 +444,7 @@ body.theme-dark .edu-card { background:rgba(255,255,255,0.02); border-color:var(
     .footer-col { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
     .footer-col p, .footer-col a { text-align: center; }
     .form-row { grid-template-columns:1fr; }
-    .hero-image-wrapper { right:-5%; height:55%; opacity:0.4; }
+    .hero-image-wrapper { right: -5%; bottom: 0; height: 55%; opacity: 0.35; }
 }
 
 @keyframes pulse {
