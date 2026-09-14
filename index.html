@@ -57,7 +57,7 @@
             <h1 class="massive-text" data-text="YADAV">YADAV</h1>
             <div class="hero-sub">
                 <p class="editorial-text"><i>AI Engineer &mdash; LLM &amp; RAG Systems</i></p>
-                <p class="mono-text">[ AGENTIC AI // LANGCHAIN // 3D COMPUTER VISION // LLMs // RAG ]</p>
+                <p class="mono-text">[ RAG &amp; RETRIEVAL // EVALUATION // MULTIMODAL // COMPUTER VISION // LLMs ]</p>
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="yc-body">
-                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">A production-grade Retrieval-Augmented Generation (RAG) system engineered to ingest, index, and query any type of document with extremely high precision and zero hallucinations.</p>
+                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">A production-grade Retrieval-Augmented Generation (RAG) system engineered to ingest, index, and query any type of document with citations traced to the source page, and every answer scored for groundedness before it is returned.</p>
                     <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
                         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
                             <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Hybrid Database Indexing:</strong> Leverages Pinecone for vector similarity search and Supabase for structured metadata storage.</li>
@@ -266,7 +266,6 @@
                     </div>
                 </div>
                 <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
-                    <a href="https://team-flow-ai-production.up.railway.app/login" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App ↗</a>
                     <a href="https://github.com/Princeyadav774623/Team_flow_AI" target="_blank" class="yc-link" style="font-size: 0.9rem;">Source Code</a>
                     <button id="open-arch-modal-btn" class="yc-link" style="background: none; border: none; cursor: pointer; font-size: 0.9rem; padding: 0; outline: none;">Architecture ⚡</button>
                 </div>
@@ -292,7 +291,7 @@
                     <p class="yc-extra">Built to solve the "black-box" problem in medical AI. The system ensures doctors can verify which regions of an MRI scan led to a specific prediction, significantly increasing trust in clinical environments. Developed using Python, CNNs, and Grad-CAM for transparent model explainability.</p>
                 </div>
                 <div class="yc-footer">
-                    <a href="https://github.com/Princeyadav774623" target="_blank" class="yc-link">source code</a>
+                    <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
                 </div>
             </div>
 
@@ -306,7 +305,7 @@
                     <p class="yc-extra">Designed as a holistic health companion that goes beyond calorie counting. By processing user health histories and real-time symptoms, it generates actionable meal plans tailored to specific health needs. Engineered with Python and predictive analytics models.</p>
                 </div>
                 <div class="yc-footer">
-                    <a href="https://github.com/Princeyadav774623" target="_blank" class="yc-link">source code</a>
+                    <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
                 </div>
             </div>
 
@@ -316,11 +315,11 @@
                     <h3 class="yc-title">Echo-D</h3>
                 </div>
                 <div class="yc-body">
-                    <p class="yc-text">AI-Powered Ultrasound Preprocessing architecture. Engineered enhanced analysis using SLIC, SAM, BLIP-2, and Grad-CAM++ techniques.</p>
-                    <p class="yc-extra">Tackles the high noise levels in standard ultrasound imaging. The architecture systematically cleans, segments, and analyzes frames in real-time, providing sonographers with a clearer diagnostic foundation before final medical review. Applied CLAHE and Otsu pipelines to significantly improve accuracy.</p>
+                    <p class="yc-text">Diagnostic support for obstetric ultrasound, built around placenta accreta spectrum detection. SLIC superpixels, SAM zero-shot segmentation, BLIP-2 medical captioning and Grad-CAM++ interpretability.</p>
+                    <p class="yc-extra">Deep learning on ultrasound fails on three fronts at once: it cannot explain itself, it struggles on irregular texture, and it needs data hospitals cannot share. Grad-CAM++ answers the first, SAM the second, and a synthetic ultrasound generator the third. CLAHE, unsharp masking and Otsu thresholding pull boundaries out of low-contrast tissue first. Scored on Dice, IoU, AUC and F1, and runs fully offline for privacy-sensitive clinics.</p>
                 </div>
                 <div class="yc-footer">
-                    <a href="https://github.com/Princeyadav774623" target="_blank" class="yc-link">source code</a>
+                    <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
                 </div>
             </div>
 
@@ -330,11 +329,12 @@
                     <h3 class="yc-title">Human Emotion Detection</h3>
                 </div>
                 <div class="yc-body">
-                    <p class="yc-text">Real-time emotion recognition using deep learning to analyze facial expressions. Integrated OpenCV for live video processing, mapping detected faces to precise emotion probabilities.</p>
-                    <p class="yc-extra">Aims to bridge the gap between human and machine interaction. The system processes video feeds instantly, detecting micro-expressions and categorizing them into core emotions with 95% accuracy. Developed with a lightweight CNN architecture to run efficiently on standard webcams.</p>
+                    <p class="yc-text">Three-modality emotion recognition fusing text, audio and video &mdash; Llama-3.2-3B with 4-bit QLoRA, a Conv1d/BiLSTM audio encoder, and an r3d_18 3D ResNet, combined by cross-modal attention.</p>
+                    <p class="yc-extra">A single modality is confidently wrong whenever the speaker is being ironic &mdash; the transcript alone cannot hear the tone. Attention across streams, with Squeeze-Excitation gating, lets one signal correct another. Trained on 9,816 MELD utterances across 7 emotion classes on H100 GPUs, through a staged pipeline with weighted sampling for class imbalance.</p>
                 </div>
                 <div class="yc-footer">
                     <a href="https://github.com/Princeyadav774623/Human-Emotion-Detection-System" target="_blank" class="yc-link">source code</a>
+                    <a href="meld_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
                 </div>
             </div>
         </div>
