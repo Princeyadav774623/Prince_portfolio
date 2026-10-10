@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Yadav | AI Engineer &mdash; LLM &amp; RAG Systems</title>
-    <meta name="description" content="Portfolio of Prince Yadav — AI/ML Engineer specializing in Deep Learning, LLMs, Computer Vision, and AI Automation. IBM Intern. Founder of NextAIQLabs.">
+    <meta name="description" content="Portfolio of Prince Yadav — AI Engineer building LLM &amp; RAG systems and computer-vision pipelines. Internships at IBM and Visys. Based in Bengaluru.">
     <meta name="keywords" content="AI Engineer, ML Engineer, Python, Deep Learning, LLMs, Portfolio, Prince Yadav, Computer Vision, RAG">
     <meta property="og:title" content="Prince Yadav | AI/ML Engineer">
-    <meta property="og:description" content="Building intelligent systems that matter. AI/ML Engineer with real-world impact at IBM.">
+    <meta property="og:description" content="AI Engineer — LLM &amp; RAG systems, computer vision. Two live projects: RAG Lab and ARMS ship inspection.">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -95,8 +95,8 @@
         <div class="about-grid">
             <div class="about-text">
                 <p class="editorial-text about-lead"><i>"I don't just build models — I build production systems that solve complex real-world engineering problems."</i></p>
-                <p class="inter-text">I'm Prince Yadav, an AI/ML Engineer from Dehradun, India. I specialize in turning deep learning, agentic workflows, and computer vision research into production-ready solutions — from real-time spatial metrology to enterprise RAG and automated market analyzers.</p>
-                <p class="inter-text">Currently, as an <span class="highlight-orange">AI/ML Intern at VISYS</span>, I am developing <strong>ARMS</strong> — an AI and 3D computer vision inspection pipeline. As the founder of <span class="highlight-orange">NextAIQLabs</span>, I architect scalable Agentic AI workflows with LangChain and LangGraph. My previous internship at <span class="highlight-orange">IBM</span> gave me enterprise-grade exposure to time-series forecasting, hyperparameter optimization, and deploying models at scale.</p>
+                <p class="inter-text">I'm Prince Yadav, an AI Engineer based in Bengaluru (B.Tech CSE, AI &amp; ML, UPES 2026). I build LLM and computer-vision systems end to end and ship them as live apps — a RAG document Q&amp;A system and ARMS, a ship-inspection pipeline.</p>
+                <p class="inter-text">Currently, as a <span class="highlight-orange">Research Intern at Visys</span>, I am building <strong>ARMS</strong>, which matches a photo of a ship to its 3-D CAD model and flags missing or moved parts. At <span class="highlight-orange">IBM</span> I built ETL pipelines and time-series forecasting models (76% directional accuracy, R² 0.82). I also founded <span class="highlight-orange">NextAIQLabs</span>, an AI-education project for schools, now paused.</p>
                 <p class="inter-text">I believe in <strong>explainable, precision-driven, and ethical AI</strong> — building intelligent systems that humans can audit, understand, and trust.</p>
                 <div class="about-cta">
                     <a href="Prince_Yadav_AI_Engineer_resume.pdf" download="Prince_Yadav_AI_Engineer_resume.pdf" class="btn-primary">Download Resume ↓</a>
@@ -106,19 +106,19 @@
             <div class="about-sidebar">
                 <div class="info-card">
                     <p class="mono-text highlight-orange">LOCATION</p>
-                    <p class="inter-text">Dehradun, Uttarakhand<br>India 🇮🇳</p>
+                    <p class="inter-text">Bengaluru, Karnataka<br>India 🇮🇳</p>
                 </div>
                 <div class="info-card">
                     <p class="mono-text highlight-orange">CURRENTLY</p>
-                    <p class="inter-text">AI/ML Intern @ VISYS<br>Founder @ NextAIQLabs</p>
+                    <p class="inter-text">Research Intern @ Visys<br>Open to full-time roles</p>
                 </div>
                 <div class="info-card">
                     <p class="mono-text highlight-orange">SPECIALIZATION</p>
-                    <p class="inter-text">Agentic AI · LangChain &amp; LangGraph · Computer Vision · RAG · Deep Learning</p>
+                    <p class="inter-text">LLM &amp; RAG Systems · Computer Vision · Multimodal Deep Learning</p>
                 </div>
                 <div class="info-card">
                     <p class="mono-text highlight-orange">CONTACT</p>
-                    <p class="inter-text"><a href="mailto:prince774623princeyadav@gmail.com" class="inline-link">prince774623princeyadav@gmail.com</a></p>
+                    <p class="inter-text"><a href="mailto:prince324yadav@gmail.com" class="inline-link">prince324yadav@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
             <!-- VISYS -->
             <div class="grid-item role-card reveal-item">
                 <div class="role-header">
-                    <h3 class="editorial-text">AI / Machine Learning Intern</h3>
+                    <h3 class="editorial-text">Research Intern</h3>
                     <span class="mono-text highlight-orange company-badge">VISYS</span>
                 </div>
                 <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem;">
@@ -142,17 +142,17 @@
                     <span class="status-pill-active" style="font-size:0.68rem; padding:0.15rem 0.55rem;"><span class="pulse-dot"></span> CURRENTLY RUNNING · IN PROGRESS</span>
                 </div>
                 <div class="role-body">
-                    <p><b>ARMS – 3D Vision &amp; Inspection Metrology Pipeline</b></p>
+                    <p><b>ARMS – Ship Inspection from a Single Image</b> · <a href="https://princeyadav77-arms-ship-inspection.hf.space" target="_blank" class="inline-link">live demo ↗</a></p>
                     <ul>
-                        <li>Developing <strong>ARMS</strong>, an AI and 3D computer vision pipeline transforming single 2D handheld photos into CAD deviation inspection reports.</li>
-                        <li>Implemented object detection (RF-DETR, OWLv2) and zero-shot segmentation with SAM 2.1.</li>
-                        <li>Engineered 6-DoF pose estimation, monocular depth, and keypoint matching using SuperPoint &amp; LightGlue.</li>
-                        <li>Integrated Point-to-Plane ICP point cloud alignment with Multimodal LLM inspection reporting via RAG.</li>
+                        <li>Finds where a ship image was taken from by matching it to the ship's 3-D CAD model: SuperPoint + LightGlue over 80 reference views, then PnP pose solving.</li>
+                        <li>12 of 12 test renders from new viewpoints located, with a typical camera error of 0.16 m.</li>
+                        <li>Flags missing or moved parts with SAM 2.1 outlines: caught 29 of 30 removed parts, with 2 false alarms in 153 checks.</li>
+                        <li>A verification gate rejects images it cannot trust; it correctly rejected all 10 photos of other ships. Deployed on Hugging Face GPU.</li>
                     </ul>
                 </div>
                 <div class="metrics">
-                    <div class="metric-pill">SYSTEM <span class="highlight-lime">ARMS</span></div>
-                    <div class="metric-pill">STATUS <span class="highlight-lime">IN PROGRESS</span></div>
+                    <div class="metric-pill">PARTS CAUGHT <span class="highlight-lime">29/30</span></div>
+                    <div class="metric-pill">CAMERA ERROR <span class="highlight-lime">0.16 m</span></div>
                 </div>
             </div>
 
@@ -183,18 +183,18 @@
                     <h3 class="editorial-text">Founder</h3>
                     <span class="mono-text highlight-orange company-badge">NextAIQLabs</span>
                 </div>
-                <p class="mono-text date">JAN 2024 – PRESENT</p>
+                <p class="mono-text date">JAN 2024 – OCT 2026 · PAUSED</p>
                 <div class="role-body">
-                    <p><b>Industrial AI Automation &amp; Education</b></p>
+                    <p><b>AI Skills Programme for Indian Schools</b></p>
                     <ul>
-                        <li>Designed AI-powered industrial automation systems improving operational efficiency by 40–60%.</li>
-                        <li>Engineered scalable system architectures for Agentic AI workflows, integrating LangChain, advanced Prompt Engineering, and Vector Databases with embeddings for intelligent automation.</li>
-                        <li>Developed hands-on AI and robotics education programs preparing students for tech careers.</li>
+                        <li>Built a schools platform (app + portal) connecting schools, teachers, parents and administrators.</li>
+                        <li>Designed a practical AI curriculum for Classes 6–12 and ran discovery with decision-makers at 4 schools.</li>
+                        <li>Developed hands-on AI and robotics education programmes for students.</li>
                     </ul>
                 </div>
                 <div class="metrics">
-                    <div class="metric-pill">EFFICIENCY <span class="highlight-lime">+40-60%</span></div>
-                    <div class="metric-pill">THROUGHPUT <span class="highlight-lime">2x-3x</span></div>
+                    <div class="metric-pill">SCHOOLS <span class="highlight-lime">4</span></div>
+                    <div class="metric-pill">STATUS <span class="highlight-lime">PAUSED</span></div>
                 </div>
             </div>
         </div>
@@ -222,11 +222,11 @@
                     <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">A production-grade Retrieval-Augmented Generation (RAG) system engineered to ingest, index, and query any type of document with citations traced to the source page, and every answer scored for groundedness before it is returned.</p>
                     <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
                         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Hybrid Database Indexing:</strong> Leverages Pinecone for vector similarity search and Supabase for structured metadata storage.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Hybrid Retrieval:</strong> Pinecone dense search plus Supabase full-text / BM25 search over text, tables and figures.</li>
                             <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Advanced Retrieval Pipeline:</strong> Implements Reciprocal Rank Fusion (RRF) and Neural Re-ranking via sentence_transformers CrossEncoder for optimal context extraction.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Continuous Evaluation:</strong> Automated Triad Evaluation utilizing an LLM-as-a-judge architecture for testing Faithfulness and Relevance of generated answers.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Deterministic Synthesis Control:</strong> System prompts enforce strict formatting and citation rules (with temperature=0.0) to eliminate hallucinations.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">High-Performance Ingestion:</strong> FastAPI background tasks handle asynchronous batch processing with real-time index upserting.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Measured Evaluation:</strong> LLM-as-a-judge suite scoring groundedness, context relevance and answer relevance: 0.95 / 0.90 / 0.95 across 80+ test questions.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Deterministic Synthesis Control:</strong> System prompts enforce strict citation rules (temperature 0.0) to keep answers grounded in the source.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Runs on a Free Tier:</strong> Moving embeddings to the Gemini API cut server memory from over 1 GB to under 100 MB, so it runs in 512 MB. FastAPI background tasks handle ingestion.</li>
                         </ul>
                     </div>
                 </div>
@@ -291,7 +291,7 @@
                     <p class="yc-extra">Built to solve the "black-box" problem in medical AI. The system ensures doctors can verify which regions of an MRI scan led to a specific prediction, significantly increasing trust in clinical environments. Developed using Python, CNNs, and Grad-CAM for transparent model explainability.</p>
                 </div>
                 <div class="yc-footer">
-                    <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
+                    <a href="https://github.com/Princeyadav774623/Neolytics" target="_blank" class="yc-link">source code</a>
                 </div>
             </div>
 
@@ -305,7 +305,7 @@
                     <p class="yc-extra">Designed as a holistic health companion that goes beyond calorie counting. By processing user health histories and real-time symptoms, it generates actionable meal plans tailored to specific health needs. Engineered with Python and predictive analytics models.</p>
                 </div>
                 <div class="yc-footer">
-                    <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
+                    <a href="https://github.com/Princeyadav774623/minor-project-1-NUTRICAREhub" target="_blank" class="yc-link">source code</a>
                 </div>
             </div>
 
@@ -316,9 +316,10 @@
                 </div>
                 <div class="yc-body">
                     <p class="yc-text">Diagnostic support for obstetric ultrasound, built around placenta accreta spectrum detection. SLIC superpixels, SAM zero-shot segmentation, BLIP-2 medical captioning and Grad-CAM++ interpretability.</p>
-                    <p class="yc-extra">Deep learning on ultrasound fails on three fronts at once: it cannot explain itself, it struggles on irregular texture, and it needs data hospitals cannot share. Grad-CAM++ answers the first, SAM the second, and a synthetic ultrasound generator the third. CLAHE, unsharp masking and Otsu thresholding pull boundaries out of low-contrast tissue first. Scored on Dice, IoU, AUC and F1, and runs fully offline for privacy-sensitive clinics.</p>
+                    <p class="yc-extra">Deep learning on ultrasound fails on three fronts at once: it cannot explain itself, it struggles on irregular texture, and it needs data hospitals cannot share. Grad-CAM++ answers the first, SAM the second, and a synthetic ultrasound generator the third. CLAHE, unsharp masking and Otsu thresholding pull boundaries out of low-contrast tissue first. Scored on Dice, IoU, AUC and F1 (+14% accuracy over a U-Net baseline on 500+ scans), and runs fully offline for privacy-sensitive clinics.</p>
                 </div>
                 <div class="yc-footer">
+                    <a href="https://github.com/Princeyadav774623/echo-D" target="_blank" class="yc-link">source code</a>
                     <a href="echod_architecture.png" target="_blank" class="yc-link">architecture &#9889;</a>
                 </div>
             </div>
@@ -355,7 +356,8 @@
                         <span class="skill-pill">C++</span>
                         <span class="skill-pill">Python</span>
                         <span class="skill-pill">SQL</span>
-                        <span class="skill-pill">Data Structures</span>
+                        <span class="skill-pill">Data Structures &amp; Algorithms</span>
+                        <span class="skill-pill">OOP</span>
                         <span class="skill-pill">System Design Architecture</span>
                     </div>
                 </div>
@@ -378,7 +380,6 @@
                 <div class="skill-category">
                     <p class="mono-text category-title">FRAMEWORKS &amp; TOOLS</p>
                     <div class="pill-container">
-                        <span class="skill-pill">TensorFlow</span>
                         <span class="skill-pill">PyTorch</span>
                         <span class="skill-pill highlight">LangChain</span>
                         <span class="skill-pill highlight">LangGraph</span>
@@ -386,6 +387,8 @@
                         <span class="skill-pill highlight">Vector Databases</span>
                         <span class="skill-pill">Scikit-learn</span>
                         <span class="skill-pill">OpenCV</span>
+                        <span class="skill-pill">SAM / LightGlue</span>
+                        <span class="skill-pill">FastAPI / Docker</span>
                         <span class="skill-pill">Pandas / NumPy</span>
                         <span class="skill-pill">Git / GitHub</span>
                     </div>
@@ -406,8 +409,8 @@
                 <div class="edu-content">
                     <h3 class="editorial-text">B.Tech — Computer Science &amp; Engineering</h3>
                     <p class="mono-text highlight-orange">UNIVERSITY OF PETROLEUM AND ENERGY STUDIES (UPES)</p>
-                    <p class="mono-text date">AUG 2022 – 2026 · COMPLETED</p>
-                    <p class="inter-text"><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms · Machine Learning &amp; Deep Learning · LangChain &amp; LangGraph · Agentic AI · LLMs &amp; Generative AI · Computer Vision · Explainable AI &amp; RAG · Data Mining · Predictive Analytics · SDLC</p>
+                    <p class="mono-text date">AUG 2022 – JUL 2026 · COMPLETED</p>
+                    <p class="inter-text"><strong>CGPA 7.26 / 10.</strong> <strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms · Machine Learning · LLMs &amp; Generative AI · Computer Vision · Explainable AI</p>
                 </div>
             </div>
             <div class="edu-card reveal-item">
@@ -419,7 +422,6 @@
                         <div class="cert-item"><span class="cert-dot"></span><span><strong>IBM Certification:</strong> Advanced Machine Learning Techniques</span></div>
                         <div class="cert-item"><span class="cert-dot"></span><span><strong>2nd Runner-Up</strong> at IBM Hackathon / Competition</span></div>
                         <div class="cert-item"><span class="cert-dot"></span><span><strong>UPES DSW Ambassador</strong> — Facilitated student-administration communication &amp; organized campus events (Jan 2024 – Feb 2025)</span></div>
-                        <div class="cert-item"><span class="cert-dot"></span><span><strong>Founder</strong> — NextAIQLabs (Industrial AI Automation Startup)</span></div>
                     </div>
                 </div>
             </div>
@@ -440,14 +442,14 @@
             </div>
             <div class="footer-col">
                 <p class="mono-text highlight-orange">CONNECT</p>
-                <a href="mailto:prince774623princeyadav@gmail.com" class="footer-link">Email</a>
+                <a href="mailto:prince324yadav@gmail.com" class="footer-link">Email</a>
                 <a href="https://linkedin.com/in/prince-yadav-6b37471b0" class="footer-link" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Princeyadav774623" class="footer-link" target="_blank">GitHub</a>
                 <a href="tel:+918630401284" class="footer-link">+91-8630401284</a>
             </div>
             <div class="footer-col">
                 <p class="mono-text highlight-orange">LOCATION</p>
-                <p class="inter-text">Dehradun, Uttarakhand<br>India 🇮🇳</p>
+                <p class="inter-text">Bengaluru, Karnataka<br>India 🇮🇳</p>
                 <p class="inter-text" style="margin-top:1rem;opacity:0.6;font-size:0.9rem;">Open to Remote / Relocation</p>
             </div>
         </div>
@@ -464,7 +466,7 @@
             <p class="inter-text" style="opacity:0.6;margin-bottom:2rem;">Let's connect and build something great together.</p>
             <div class="modal-links">
                 <a href="tel:+918630401284" class="mono-text modal-link-item">📞 +91-8630401284</a>
-                <a href="mailto:prince774623princeyadav@gmail.com" class="mono-text modal-link-item">✉️ prince774623princeyadav@gmail.com</a>
+                <a href="mailto:prince324yadav@gmail.com" class="mono-text modal-link-item">✉️ prince324yadav@gmail.com</a>
                 <a href="https://linkedin.com/in/prince-yadav-6b37471b0" target="_blank" class="mono-text modal-link-item">💼 LinkedIn Profile</a>
                 <a href="https://github.com/Princeyadav774623" target="_blank" class="mono-text modal-link-item">🐙 GitHub Profile</a>
             </div>

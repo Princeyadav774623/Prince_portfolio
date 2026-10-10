@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = document.getElementById("form-submit-btn");
     const submitText = document.getElementById("submit-text");
 
-    contactForm.addEventListener("submit", (e) => {
+    if (contactForm) contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const name = document.getElementById("cf-name").value.trim();
         const email = document.getElementById("cf-email").value.trim();
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Build mailto link as a reliable fallback
         const mailtoBody = `Hi Prince,%0A%0AMy name is ${encodeURIComponent(name)}.%0A%0A${encodeURIComponent(message)}%0A%0AReply to: ${encodeURIComponent(email)}`;
-        const mailtoLink = `mailto:prince774623princeyadav@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
+        const mailtoLink = `mailto:prince324yadav@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
 
         setTimeout(() => {
             window.location.href = mailtoLink;
