@@ -240,6 +240,36 @@
             <!-- Fine Divider Line -->
             <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
 
+            <!-- Cognita -->
+            <div class="yc-card reveal-item">
+                <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 class="yc-title" style="font-size: 1.8rem;">Cognita — Multi-Agent Research</h3>
+                    <div class="status-indicator" style="display: flex; align-items: center; gap: 8px;">
+                        <span class="pulse-dot" style="width: 10px; height: 10px; background-color: var(--papaya-orange); border-radius: 50%; box-shadow: 0 0 10px var(--papaya-orange); animation: pulse 1.5s infinite;"></span>
+                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE</span>
+                    </div>
+                </div>
+                <div class="yc-body">
+                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">Ask a research question and a team of agents plans it, searches the web, reads the sources, checks every claim against them, and writes a cited report with a confidence score, streaming its progress and the report as it is written.</p>
+                    <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">LangGraph Orchestration:</strong> Nine agent nodes, from triage and planning through search, reading, fact-checking and reporting, with a gap-analysis loop that searches again when the evidence is thin.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Claim Verification:</strong> Claims are checked against the sources and marked when they hold up against one the draft was not written from; the report carries a confidence score with its reasons.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Your Documents Too:</strong> Uploaded files are searched alongside the web with hybrid retrieval (pgvector plus Postgres full-text).</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Durable Runs:</strong> Research is a job on a Postgres queue with fenced leases. A refresh, a dropped connection or a deploy does not lose a run; the browser reattaches and resumes from the last event.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Multi-Tenant and Deployed:</strong> Supabase auth with Postgres row-level security on every table. Runs on Google Cloud Run, scaling to zero when idle.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="https://cognita-web-368646012388.europe-west1.run.app" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App ↗</a>
+                    <span class="mono-text" style="font-size: 0.75rem; opacity: 0.7;">First load may take ~20s to wake up</span>
+                </div>
+            </div>
+
+            <!-- Fine Divider Line -->
+            <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+
             <!-- Team Flow AI -->
             <div class="yc-card reveal-item">
                 <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
@@ -389,6 +419,8 @@
                         <span class="skill-pill">OpenCV</span>
                         <span class="skill-pill">SAM / LightGlue</span>
                         <span class="skill-pill">FastAPI / Docker</span>
+                        <span class="skill-pill">PostgreSQL / pgvector</span>
+                        <span class="skill-pill">Google Cloud Run</span>
                         <span class="skill-pill">Pandas / NumPy</span>
                         <span class="skill-pill">Git / GitHub</span>
                     </div>
