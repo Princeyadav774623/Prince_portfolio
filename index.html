@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio of Prince Yadav — AI Engineer building LLM &amp; RAG systems and computer-vision pipelines. Internships at IBM and Visys. Based in Bengaluru.">
     <meta name="keywords" content="AI Engineer, ML Engineer, Python, Deep Learning, LLMs, Portfolio, Prince Yadav, Computer Vision, RAG">
     <meta property="og:title" content="Prince Yadav | AI/ML Engineer">
-    <meta property="og:description" content="AI Engineer — LLM &amp; RAG systems, computer vision. Two live projects: RAG Lab and ARMS ship inspection.">
+    <meta property="og:description" content="AI Engineer — LLM &amp; RAG systems, computer vision. Live projects: Cognita multi-agent research, RAG Lab, and ARMS ship and car inspection.">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -142,7 +142,7 @@
                     <span class="status-pill-active" style="font-size:0.68rem; padding:0.15rem 0.55rem;"><span class="pulse-dot"></span> CURRENTLY RUNNING · IN PROGRESS</span>
                 </div>
                 <div class="role-body">
-                    <p><b>ARMS – Ship Inspection from a Single Image</b> · <a href="https://princeyadav77-arms-ship-inspection.hf.space" target="_blank" class="inline-link">live demo ↗</a></p>
+                    <p><b>ARMS – Ship &amp; Car Inspection from a Single Image</b> · <a href="https://arms-1097556009063.europe-west1.run.app" target="_blank" class="inline-link">ship live ↗</a> · <a href="https://arms-1097556009063.europe-west1.run.app/car" target="_blank" class="inline-link">car live ↗</a></p>
                     <ul>
                         <li>Finds where a ship image was taken from by matching it to the ship's 3-D CAD model: SuperPoint + LightGlue over 80 reference views, then PnP pose solving.</li>
                         <li>12 of 12 test renders from new viewpoints located, with a typical camera error of 0.16 m.</li>
@@ -208,6 +208,38 @@
         </div>
 
         <div class="yc-grid" style="grid-template-columns: 1fr; margin-bottom: 5rem; gap: 2rem;">
+            <!-- Cognita -->
+            <div class="yc-card reveal-item">
+                <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 class="yc-title" style="font-size: 1.8rem;">Cognita — Multi-Agent Research</h3>
+                    <div class="status-indicator" style="display: flex; align-items: center; gap: 8px;">
+                        <span class="pulse-dot" style="width: 10px; height: 10px; background-color: var(--papaya-orange); border-radius: 50%; box-shadow: 0 0 10px var(--papaya-orange); animation: pulse 1.5s infinite;"></span>
+                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE</span>
+                    </div>
+                </div>
+                <div class="yc-body">
+                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">Ask a research question and a team of agents plans it, searches the web, reads the sources, checks every claim against them, and writes a cited report with a confidence score, streaming its progress and the report as it is written.</p>
+                    <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">LangGraph Orchestration:</strong> Nine agent nodes, from triage and planning through search, reading, fact-checking and reporting, with a gap-analysis loop that searches again when the evidence is thin.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Claim Verification:</strong> Claims are checked against the sources and marked when they hold up against one the draft was not written from; the report carries a confidence score with its reasons.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Your Documents Too:</strong> Uploaded files are searched alongside the web with hybrid retrieval (pgvector plus Postgres full-text).</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Durable Runs:</strong> Research is a job on a Postgres queue with fenced leases. A refresh, a dropped connection or a deploy does not lose a run; the browser reattaches and resumes from the last event.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Multi-Tenant and Deployed:</strong> Supabase auth with Postgres row-level security on every table. Runs on Google Cloud Run, scaling to zero when idle.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="https://cognita-web-368646012388.europe-west1.run.app" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App ↗</a>
+                    <a href="https://github.com/Princeyadav774623/cognita-research" target="_blank" class="yc-link" style="font-size: 0.9rem;">Source Code</a>
+                    <span class="mono-text" style="font-size: 0.75rem; opacity: 0.7;">First load may take ~20s to wake up</span>
+                </div>
+            </div>
+
+
+            <!-- Fine Divider Line -->
+            <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+
             <!-- RAG Based System (Highlighted) -->
             <div class="yc-card reveal-item" style="position: relative; overflow: hidden;">
 
@@ -240,31 +272,55 @@
             <!-- Fine Divider Line -->
             <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
 
-            <!-- Cognita -->
+            <!-- ARMS Ship -->
             <div class="yc-card reveal-item">
                 <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h3 class="yc-title" style="font-size: 1.8rem;">Cognita — Multi-Agent Research</h3>
+                    <h3 class="yc-title" style="font-size: 1.8rem;">ARMS — Ship Inspection</h3>
                     <div class="status-indicator" style="display: flex; align-items: center; gap: 8px;">
                         <span class="pulse-dot" style="width: 10px; height: 10px; background-color: var(--papaya-orange); border-radius: 50%; box-shadow: 0 0 10px var(--papaya-orange); animation: pulse 1.5s infinite;"></span>
-                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE</span>
+                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE · VISYS</span>
                     </div>
                 </div>
                 <div class="yc-body">
-                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">Ask a research question and a team of agents plans it, searches the web, reads the sources, checks every claim against them, and writes a cited report with a confidence score, streaming its progress and the report as it is written.</p>
+                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">Checks a ship against its 3-D CAD design from a single photo: finds where the camera stood, redraws the CAD from that exact spot, and flags parts that are missing, moved or resized — or says it cannot tell. Built as a Research Intern at Visys.</p>
                     <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
                         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">LangGraph Orchestration:</strong> Nine agent nodes, from triage and planning through search, reading, fact-checking and reporting, with a gap-analysis loop that searches again when the evidence is thin.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Claim Verification:</strong> Claims are checked against the sources and marked when they hold up against one the draft was not written from; the report carries a confidence score with its reasons.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Your Documents Too:</strong> Uploaded files are searched alongside the web with hybrid retrieval (pgvector plus Postgres full-text).</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Durable Runs:</strong> Research is a job on a Postgres queue with fenced leases. A refresh, a dropped connection or a deploy does not lose a run; the browser reattaches and resumes from the last event.</li>
-                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Multi-Tenant and Deployed:</strong> Supabase auth with Postgres row-level security on every table. Runs on Google Cloud Run, scaling to zero when idle.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Camera From One Image:</strong> SuperPoint + LightGlue matching over 80 reference views, then PnP pose solving: 12 of 12 new viewpoints located, typical camera error 0.16 m.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Part-Level Findings:</strong> SAM 2.1 outlines each part; caught 29 of 30 removed parts with 2 false alarms in 153 checks.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Knows When Not to Answer:</strong> A verification gate rejects images it cannot trust — it rejected all 10 photos of other ships.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
-                    <a href="https://cognita-web-368646012388.europe-west1.run.app" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App ↗</a>
-                    <a href="https://github.com/Princeyadav774623/cognita-research" target="_blank" class="yc-link" style="font-size: 0.9rem;">Source Code</a>
-                    <span class="mono-text" style="font-size: 0.75rem; opacity: 0.7;">First load may take ~20s to wake up</span>
+                    <a href="https://arms-1097556009063.europe-west1.run.app" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App (Ship) ↗</a>
+                    <a href="https://princeyadav77-arms-ship-inspection.hf.space" target="_blank" class="yc-link" style="font-size: 0.9rem;">Hugging Face Mirror</a>
+                </div>
+            </div>
+
+            <!-- Fine Divider Line -->
+            <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.3); width: 100%; margin: 2rem 0; box-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+
+            <!-- ARMS Car -->
+            <div class="yc-card reveal-item">
+                <div class="yc-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 class="yc-title" style="font-size: 1.8rem;">ARMS — Car Inspection</h3>
+                    <div class="status-indicator" style="display: flex; align-items: center; gap: 8px;">
+                        <span class="pulse-dot" style="width: 10px; height: 10px; background-color: var(--papaya-orange); border-radius: 50%; box-shadow: 0 0 10px var(--papaya-orange); animation: pulse 1.5s infinite;"></span>
+                        <span class="mono-text" style="color: var(--papaya-orange); font-size: 0.8rem; font-weight: bold;">LIVE · VISYS</span>
+                    </div>
+                </div>
+                <div class="yc-body">
+                    <p class="yc-text" style="font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem;">The same method rebuilt for a car: give it a photo of a Mercedes-Benz W222 S-Class and it finds the camera, redraws the 3-D model from that spot, and names every outside part that looks missing or changed across 28 parts. Two photos from the same spot give a before/after comparison.</p>
+                    <div class="yc-extra" style="max-width: 900px; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Camera Located:</strong> 16 of 16 held-out renders, median error 1.7 cm and 0.19°.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Few False Alarms:</strong> 0 false alarms in 217 part checks on clean renders; per-part limits learned from real photos cut false findings from 9.9 to 2.2 per photo.</li>
+                            <li style="position: relative; padding-left: 1.5rem;"><span style="position: absolute; left: 0; top: 6px; color: var(--papaya-orange); font-size: 0.8rem;">◆</span> <strong style="color: var(--papaya-orange);">Real Photos:</strong> Camera verified on 30 of 53 real W222 photos never used to tune any threshold.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yc-footer" style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="https://arms-1097556009063.europe-west1.run.app/car" target="_blank" class="yc-link" style="color: var(--papaya-orange); font-size: 0.9rem;">View Live App (Car) ↗</a>
                 </div>
             </div>
 
